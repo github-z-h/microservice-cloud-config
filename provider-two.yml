@@ -12,11 +12,11 @@ mybatis:
 spring:
   profiles: dev
   application:
-    name: providerribbon1 #这个很重要，这在以后的服务与服务之间相互调用一般都是根据这个name
+    name: providerribbon2 #这个很重要，这在以后的服务与服务之间相互调用一般都是根据这个name
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource # 当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver # mysql驱动包
-    url: jdbc:mysql://127.0.0.1:3306/springcloud_db01?serverTimezone=GMT%2B8 # 数据库名称
+    url: jdbc:mysql://127.0.0.1:3306/springcloud_db02?serverTimezone=GMT%2B8 # 数据库名称
     username: root
     password: root
     dbcp2:
@@ -44,7 +44,7 @@ mybatis:
 spring:
   profiles: prod
   application:
-    name: providerribbon2 #这个很重要，这在以后的服务与服务之间相互调用一般都是根据这个name
+    name: providerribbon #这个很重要，这在以后的服务与服务之间相互调用一般都是根据这个name
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource # 当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver # mysql驱动包
