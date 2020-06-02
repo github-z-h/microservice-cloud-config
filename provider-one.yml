@@ -36,7 +36,7 @@ eureka:
     prefer-ip-address: true #访问地址显示主机名的问题
 ---
 server:
-  port: 8003
+  port: 8001
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml # mybatis配置文件所在路径
   type-aliases-package: com.zh.testapi.entities # 所有Entity别名类所在包
